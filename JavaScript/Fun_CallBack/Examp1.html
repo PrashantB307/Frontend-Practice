@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+        function multiply(a,b,chekRes){
+            let prod=a*b;
+            document.write("Product is :- "+ prod);
+            chekRes(prod);
+        }
+        function evenOdd(result){
+            if(result%2==0)
+            document.write(" even");
+            else
+            document.write(" odd");
+        }
+        multiply(3,5,evenOdd);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
