@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+        let x=1;
+        function printnos(){
+            document.write(x+"<br>");
+            x++;
+            if(x==11){
+                clearInterval(y);
+                document.write("Done!!");
+            }
+        }
+        let y=setInterval(printnos , 1000);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
