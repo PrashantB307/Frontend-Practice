@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+        let student ={
+            name:"Prashant",
+            age:20,
+            phy:97,
+            chem:95,
+            maths:99
+        };
+        let sum=0;
+        for(key in student){
+            if(typeof student[key]==='number'){
+                if(key!=="age")
+                sum=sum+student[key];
+            }
+        }
+        document.write("Total is "+sum);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
