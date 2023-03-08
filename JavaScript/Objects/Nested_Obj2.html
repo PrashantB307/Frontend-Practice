@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+        let mycar=new Object();
+        mycar.company="Tata";
+        mycar.model="Nexon";
+        mycar.year=2023; 
+
+        mycar.stereo=new Object();
+        mycar.stereo.name="Sony";
+        mycar.stereo.maxvol=35;
+
+        for(key in mycar){
+            if(typeof mycar[key] != 'object')
+            console.log(key +":"+mycar[key]);
+            else{
+                for(x in mycar[key])
+                console.log(x +":"+mycar[key][x]);
+            }
+        }
+       
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
