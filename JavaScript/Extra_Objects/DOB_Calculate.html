@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+        function show(){
+            let str=prompt("Enter your DOB(month dd,yyyy)");
+            let dob=new Date(str);
+            let days=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+            document.write("You were born on "+days[dob.getDay()]);
+        }
+    </script>
+</head>
+<body>
+    <input type="button" value="My Birth Day" onclick="show();"><br>
+</body>
+</html>   
