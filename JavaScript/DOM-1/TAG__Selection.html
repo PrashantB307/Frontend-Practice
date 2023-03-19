@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+        function show(){
+            let nav=document.getElementById("nav2");
+            let li=nav.getElementsByTagName("li");
+            for(let x of li){
+                console.log(x);
+            }
+        }
+    </script>
+</head>
+<body>
+    <ul id="nav1">
+        <li>Company Profile</li>
+        <li>Investors</li>
+        <li>Share Market</li>
+        <li>Stock Market</li>
+        <li>Portofolio</li>
+    </ul>
+    <ul id="nav2">
+        <li>Home</li>
+        <li>Products</li>
+        <li>Services</li>
+        <li>Contacts</li>
+        <li>About us</li>
+    </ul>
+    <input type="button" value="Click Me" onclick="show()">
+</body>
+</html>
