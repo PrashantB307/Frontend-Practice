@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+        function decorate(){
+            let element=document.querySelectorAll(".high");
+            element.forEach(item =>{
+                item.style.border="solid 2px red"
+            });
+        }
+    </script>
+</head>
+<body>
+    <ul id="nav1" class="high">
+        <li>Home</li>
+        <li>Products</li>
+        <li>Services</li>
+        <li>Contacts</li>
+        <li>About us</li>
+    </ul>
+    <ul id="nav2" class="high">
+        <li>Books</li>
+        <li>Mobiles</li>
+        <li>Laptops</li>
+    </ul>
+    <ul id="nav3" class="high">
+        <li>Accesories</li>
+        <li>Cloths</li>
+        <li>Pens</li>
+        <li>Diariess</li>
+    </ul>
+    <input type="button" value="Add Border" onclick="decorate()">
+</body>
+</html>
