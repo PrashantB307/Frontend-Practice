@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="Examp5.css">
+    <script>
+        function decorate(){
+            let para=document.querySelector("p");
+            para.classList.add("error");
+        }
+        function undecorate(){
+            let para=document.querySelector("p");
+            para.classList.remove("error");
+        }
+    </script>
+</head>
+<body>
+    <p>Hello everyone my name is Prashant Bhardwaj</p>
+    <input type="button" value="Add" onclick="decorate();">
+    <input type="button" value="Remove" onclick="undecorate();">
+
+    
+</body>
+</html>
