@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+        function addlist(){
+            let Languages=["C","C++","Java","Python","JS"];
+            let div=document.querySelector("div");
+            let mylist=document.createElement("ul");
+            Languages.forEach(name =>{
+                mylist.innerHTML += "<li>"+name+"</li>";
+            });
+            div.appendChild(mylist);
+        }
+    </script>
+</head>
+<body>
+    <div id="d1">
+
+    </div>
+    <input type="button" value="Show Languages" onclick="addlist();">
+</body>
+</html>
