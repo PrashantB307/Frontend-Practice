@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+        function addPara(){
+            let div=document.querySelector("div");
+            let newpara=document.createElement("p");
+            let addtext=document.createTextNode("I am para 3");
+            newpara.appendChild(addtext);
+            div.appendChild(newpara);
+        }
+    </script>
+</head>
+<body>
+    <div id="d1">
+        <p id="p1">I am para 1</p>
+        <p id="p2">I am para 2</p>    
+    </div>
+    <input type="button" value="add new para" onclick="addPara();">
+    
+</body>
+</html>
