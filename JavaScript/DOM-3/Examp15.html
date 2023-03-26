@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+        function removePara(){
+            let div=document.querySelector("div");
+            let para=div.firstElementChild;
+            para.remove();
+        }
+    </script>
+</head>
+<body>
+    <div id="d1">
+        <p id="p1">I am para 1</p>
+        <p id="p2">I am para 2</p>    
+    </div>
+    <input type="button" value="remove para" onclick="removePara();">
+    
+</body>
+</html>
