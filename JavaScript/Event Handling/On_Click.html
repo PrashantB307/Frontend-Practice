@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+        function color1(){
+            let div=document.querySelector("#div1");
+            div.style.backgroundColor="red";
+        }
+        function color2(){
+            let div=document.querySelector("#div2");
+            div.style.backgroundColor="green";
+        }
+    </script>
+    <style>
+        #div1{
+            width:300px;
+            height: 200px;
+            border: solid 1px black;
+        }
+        #div2{
+            width:300px;
+            height: 200px;
+            border: solid 1px black;
+        }
+    </style>
+</head>
+<body>
+    <div id="div1" onclick="color1()">
+        Click to change the color 
+    </div>
+    <div id="div2" onclick="color2()">
+        Click to change the color
+    </div>
+</body>
+</html>
