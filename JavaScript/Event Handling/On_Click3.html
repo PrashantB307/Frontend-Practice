@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+        function changecolor(ref){
+            switch(ref.nextSibling.nodeValue.trim())
+            {
+                case 'Red':
+                    document.body.bgColor="red";
+                    break;
+                case 'Yellow':
+                    document.body.bgColor="yellow";
+                    break;
+                case 'Green':
+                    document.body.bgColor="blue";
+                    break;   
+            } 
+        }
+    </script>
+  
+</head>
+<body>
+    <div >
+        <h3>Select an option to change th Background color of page</h3>
+        <input type="radio" name="r1" onclick="changecolor(this)"> Red<br>
+        <input type="radio" name="r1" onclick="changecolor(this)"> Yellow<br>
+        <input type="radio" name="r1" onclick="changecolor(this)"> Green<br>
+    </div>
+</body>
+</html>
